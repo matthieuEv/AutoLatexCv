@@ -1,0 +1,29 @@
+# Ignore le dossier build
+build/
+
+# Ignore le dossier venv
+venv/
+
+# Ignore le dossier .vscode
+.vscode/
+
+# Ignore le dossier __pycache__
+__pycache__/
+
+# Ignore les fichiers *.aux
+*.aux
+
+# Ignore les fichiers *.log
+*.log
+
+# Ignore les fichiers *.out
+*.out
+
+# Ignore les fichiers temp.*
+temp.*
+
+# Ignore le fichier .env
+.env
+
+# Ignore le fichier readme.md
+readme.md

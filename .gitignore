@@ -1,0 +1,9 @@
+/build/*
+venv
+*.aux
+*.log
+*.out
+temp.*
+.vscode
+__pycache__
+.env

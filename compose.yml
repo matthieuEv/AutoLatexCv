@@ -1,0 +1,14 @@
+version: '3'
+services:
+  auto-latex-cv:
+    image: matthieuev/auto-latex-cv:latest
+    environment:
+      POCKET_BASE_URL : ""
+      POCKET_BASE_AutoLatexCv_COLLECTION : ""
+      POCKET_BASE_AutoLatexCv_RECORD_ID_FR : ""
+      POCKET_BASE_AutoLatexCv_RECORD_ID_EN : ""
+      OUTPUT_DIRECTORY : "build"
+      POCKET_BASE_EMAIL_AUTH : ""
+      POCKET_BASE_PASSWORD_AUTH : ""
+      CV_FR_ID : ""
+      CV_EN_ID : ""
