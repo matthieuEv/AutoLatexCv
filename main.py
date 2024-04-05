@@ -5,7 +5,7 @@ from pocketbase import PocketBase
 from pocketbase.models.dtos import RealtimeEvent
 
 from uploadFile import modify_record_pdf
-from generate import generatePDF
+from gen import generatePDF
 
 from dotenv import load_dotenv
 load_dotenv()
