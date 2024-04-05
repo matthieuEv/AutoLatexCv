@@ -11,9 +11,9 @@ def generatePDF(data,lang):
 
     # Load the LaTeX template
     if lang == "fr":
-        template = env.get_template('texFileFr.tex')
+        template = env.get_template('./template/texFileFr.tex')
     else:
-        template = env.get_template('texFileEn.tex')
+        template = env.get_template('./template/texFileEn.tex')
 
     # Render the template with the data
     output = template.render(**data)
@@ -23,10 +23,15 @@ def generatePDF(data,lang):
         with open('output.tex', 'w',encoding='utf-8') as f:
             f.write(output)
 
+        print("Le fichier LaTeX a été généré avec succès.")
         pdfl = PDFLaTeX.from_texfile("output.tex")
-        pdfl.set_output_directory("output")
+        print("PDFLaTeX object created successfully.")
+        pdfl.set_output_directory("build")
+        print("Output directory set successfully.")
         pdfl.set_pdf_filename("output"+lang)
+        print("PDF filename set successfully.")
         pdfl.create_pdf(keep_pdf_file=True)
+        print("PDF file created successfully.")
     except Exception as e:
         print(f"Error: {e}")
 
@@ -34,7 +39,7 @@ def generatePDF(data,lang):
 
 if __name__ == "__main__":
     # Load the JSON data
-    with open('data.json', 'r',encoding='utf-8') as f:
+    with open('template.json', 'r',encoding='utf-8') as f:
         data = json.load(f)
 
     generatePDF(data,"fr")
