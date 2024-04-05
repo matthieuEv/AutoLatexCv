@@ -108,75 +108,101 @@
 
 %----------HEADING----------
 \begin{center}
-    {\huge {{full_name}}} \\ \vspace{10pt} 
-    \href{tel:{{phone_number}}}{{\color{blue}{{phone_number}}}} ~
-    \small{-}
-    \href{mailto:{{email}}}{\color{blue}{{{email}}}} ~ 
-    {{complex.links}}
-    \vspace{-7pt}
+  {\huge {{ full_name }}} \\ \vspace{10pt}
+  \href{tel:{{ phone_number }}} {\color{blue} {{ phone_number }}} ~
+  \small{-}
+  \href{mailto:{{ email }}} {\color{blue} {{ email }}} ~
+  \small{-}
+  {% for key, value in links.items() %} \href{ {{ value }} } {\color{blue} {{ key }}} ~ \small{-} {% endfor %}
 \end{center}
 
 %-----------SUMMARY-----------
-\section{\color{{rgb}{0.36, 0.54, 0.66}}SUMMARY}
-  {{description}}
-  \vspace{-10pt}
+\section{\color{airforceblue}SUMMARY}
+  {{ description }}
+\vspace{-10pt}
 
 %-----------EDUCATION-----------
-\section{\color{{rgb}{0.36, 0.54, 0.66}}EDUCATION}
+\section{\color{airforceblue}EDUCATION}
   \resumeSubHeadingListStart
-    {{complex.education}}
+  {% for edu in education %}
+    \resumeSubheading
+      { {{ edu.Name }} }{ {{ edu.Start }} - {{ edu.End }}}
+      { {{ edu.Degree }} }{ {{ edu.Location }} }
+  {% endfor %}
   \resumeSubHeadingListEnd
-  \vspace{-20pt}
+  \vspace{-10pt}
 
 %-----------PROGRAMMING SKILLS-----------
-\section{\color{{rgb}{0.36, 0.54, 0.66}}TECHNICAL SKILLS}
+\section{\color{airforceblue}TECHNICAL SKILLS}
   \begin{itemize}[leftmargin=0in, label={}]
     \small{
-      {{complex.skills}}
+      {% for skill in skills %}
+        \resumeItem{\normalsize{\textbf{ {{ skill.Name}} :}
+        {% for item in skill.list %}{{ item }}  {% endfor %}
+        }}
+      {% endfor %}
     }
  \end{itemize}
  \vspace{-16pt}
- 
- %-----------EXPERIENCE-----------
-\section{\color{{rgb}{0.36, 0.54, 0.66}}WORK EXPERIENCE}
-  \resumeSubHeadingListStart
-    {{complex.experience}}
-  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{\color{airforceblue}WORK EXPERIENCE}
+ \resumeSubHeadingListStart
+  {% for exp in experience %}
+    \resumeSubheading
+      { {{ exp.Title }} }{ {{ exp.Company }} }{ {{ exp.Location }} }{ {{ exp.Start }} , {{ exp.End }} }
+      \resumeItemListStart
+      {% for desc in exp.Description %}
+      \resumeItem{\normalsize{ {{ desc }} } }
+      {% endfor %}
+      \resumeItemListEnd
+  {% endfor %}
+ \resumeSubHeadingListEnd
 \vspace{-20pt}
 
- %-----------PROJECTS-----------
-\section{\color{{rgb}{0.36, 0.54, 0.66}}PROJECTS}    
-    \resumeItemListStart
+%-----------PROJECTS-----------
+\section{\color{airforceblue}PROJECTS}    
+ \resumeItemListStart
+     \vspace{0.5pt}
+      {% for proj in projects %}
         \vspace{0.5pt}
-        {{complex.projects}}
-        \vspace{5pt}
-    \resumeItemListEnd  
-   
- \vspace{-12pt}
+        \resumeItem{\normalsize{\textbf{ {{ proj.Name }} }, {{ proj.Description }} } \href{ {{ proj.Link }} }{\color{blue}\underline{GitHub}}}
+      {% endfor %}
+     \vspace{5pt}
+ \resumeItemListEnd  
+
+\vspace{-12pt}
 
 %-----------certification---------------
-\section{\color{{rgb}{0.36, 0.54, 0.66}}CERTIFICATIONS}
+\section{\color{airforceblue}CERTIFICATIONS}
     
   \resumeItemListStart
-    {{complex.certification}}
+    {% for cert in certification %}
+      \resumeItem{ \normalsize{ \textbf{ {{ cert.Name }} ( {{ cert.Date }} )}} \href{ {{ cert.Link }} }{ \color{blue}\underline{Link} }}
+      \vspace{-5pt}
+    {% endfor %}
   \resumeItemListEnd 
       
 \vspace{-8pt}
 
 %-----------language---------------
-\section{\color{{rgb}{0.36, 0.54, 0.66}}LANGUAGE}
-    
+\section{\color{airforceblue}LANGUAGE}
   \resumeItemListStart
-    {{complex.languages}}
-  \resumeItemListEnd 
-      
-\vspace{-8pt}
+    {% for key, value in languages.items() %}
+      \resumeItem{ \normalsize{ {{ key }} - {{ value }} } }
+      \vspace{-5pt}
+    {% endfor %}
+  \resumeItemListEnd     
+  \vspace{-8pt}
 
 %-----------EXTRACURRICULAR---------------
-\section{\color{{rgb}{0.36, 0.54, 0.66}}EXTRACURRICULAR ACTIVITIES}
+\section{\color{airforceblue}EXTRACURRICULAR ACTIVITIES}
     
       \resumeItemListStart
-        {{complex.extracurricular}}
+        {% for item in extracurricular %}
+          \resumeItem{\normalsize{\textbf{ {{item.Name}} :} {{ item.Description }} }}
+          \vspace{-5pt}
+        {% endfor %}
       \resumeItemListEnd 
       
 \vspace{-12pt}
