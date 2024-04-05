@@ -27,3 +27,6 @@ temp.*
 
 # Ignore le fichier readme.md
 readme.md
+
+texFileEn.tex
+texFileFr.tex

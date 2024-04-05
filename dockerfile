@@ -16,3 +16,5 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 CMD [ "python", "./main.py" ]
+
+# docker buildx build . -t matthieuev/auto-latex-cv:v0.1.1 --platform linux/arm64/v8 --push

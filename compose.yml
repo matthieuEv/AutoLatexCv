@@ -3,12 +3,12 @@ services:
   auto-latex-cv:
     image: matthieuev/auto-latex-cv:latest
     environment:
-      POCKET_BASE_URL : ""
-      POCKET_BASE_AutoLatexCv_COLLECTION : ""
-      POCKET_BASE_AutoLatexCv_RECORD_ID_FR : ""
-      POCKET_BASE_AutoLatexCv_RECORD_ID_EN : ""
+      POCKET_BASE_URL : "https://pocketbase.matthieu-evain.fr"
+      POCKET_BASE_AutoLatexCv_COLLECTION : "AutoLatexCv"
+      POCKET_BASE_AutoLatexCv_RECORD_ID_FR : "38p6eqae5ytvkda"
+      POCKET_BASE_AutoLatexCv_RECORD_ID_EN : "jt5yceqs3a0xf6k"
       OUTPUT_DIRECTORY : "build"
-      POCKET_BASE_EMAIL_AUTH : ""
-      POCKET_BASE_PASSWORD_AUTH : ""
-      CV_FR_ID : ""
-      CV_EN_ID : ""
+      POCKET_BASE_EMAIL_AUTH : "evainmatthieu44@gmail.com"
+      POCKET_BASE_PASSWORD_AUTH : "djCHA2GjQbmwvKfjp@FePV*v&7qZsLdnVsA#&YK#"
+      CV_FR_ID : "c95sbn3z85g9kf7"
+      CV_EN_ID : "dim9bmh8ipv406r"
