@@ -28,5 +28,11 @@ temp.*
 # Ignore le fichier readme.md
 readme.md
 
+*.pdf
+*.gz
+
 texFileEn.tex
 texFileFr.tex
+output.tex
+
+images/

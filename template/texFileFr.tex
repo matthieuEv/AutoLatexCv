@@ -65,10 +65,8 @@
 \begin{center}
   {\huge {{ full_name }}} \\ \vspace{10pt}
   \href{tel:{{ phone_number }}} {\color{blue} {{ phone_number }}} ~
-  \small{-}
   \href{mailto:{{ email }}} {\color{blue} {{ email }}} ~
-  \small{-}
-  {% for key, value in links.items() %} \href{ {{ value }} } {\color{blue} {{ key }}} ~ \small{-} {% endfor %}
+  {% for key, value in links.items() %} \href{ {{ value }} } {\color{blue} {{ key }}} ~ {% endfor %}
 \end{center}
 
 %-----------SUMMARY-----------
@@ -93,7 +91,7 @@
     \small{
       {% for skill in skills %}
         \resumeItem{\normalsize{\textbf{ {{ skill.Name}} :}
-        {% for item in skill.list %}{{ item }}  {% endfor %}
+        {% for item in skill.list %}{{ item }} , {% endfor %}
         }}
       {% endfor %}
     }
@@ -110,6 +108,7 @@
       {% for desc in exp.Description %}
       \resumeItem{\normalsize{ {{ desc }} } }
       {% endfor %}
+      \null\hfill\raisebox{30pt}[0pt][0pt]{\includegraphics[width=20pt, height=20pt]{ {{ exp.image }} }}
       \resumeItemListEnd
   {% endfor %}
  \resumeSubHeadingListEnd
@@ -121,7 +120,11 @@
      \vspace{0.5pt}
       {% for proj in projects %}
         \vspace{0.5pt}
-        \resumeItem{\normalsize{\textbf{ {{ proj.Name }} }, {{ proj.Description }} } \href{ {{ proj.Link }} }{\color{blue}\underline{GitHub}}}
+        {% if proj.Link == '' %}
+          \resumeItem{\normalsize{\textbf{ {{ proj.Name }} }, {{ proj.Description }} } }
+        {% else %}
+          \resumeItem{\normalsize{\textbf{ {{ proj.Name }} }, {{ proj.Description }} } \href{ {{ proj.Link }} }{\color{blue}\underline{GitHub}}}
+        {% endif %}
       {% endfor %}
      \vspace{5pt}
  \resumeItemListEnd  
@@ -133,8 +136,12 @@
     
   \resumeItemListStart
     {% for cert in certification %}
-      \resumeItem{ \normalsize{ \textbf{ {{ cert.Name }} ( {{ cert.Date }} )}} \href{ {{ cert.Link }} }{ \color{blue}\underline{Link} }}
-      \vspace{-5pt}
+        {% if cert.Link == '' %}
+          \resumeItem{ \normalsize{ \textbf{ {{ cert.Name }} ( {{ cert.Date }} )}} }
+        {% else %}
+          \resumeItem{ \normalsize{ \textbf{ {{ cert.Name }} ( {{ cert.Date }} )}} \href{ {{ cert.Link }} }{ \color{blue}\underline{Link} }}
+        {% endif %}
+        \vspace{-5pt}
     {% endfor %}
   \resumeItemListEnd 
       

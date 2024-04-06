@@ -1,133 +1,185 @@
 {
-    "full_name": "John Doe",
-    "phone_number": "+33600000000",
-    "email": "example@example.com",
-    "description": "I am a software engineer with 10 years of experience. I have worked on a variety of projects and have a strong understanding of software development. I am passionate about learning new technologies and am always looking for new challenges. I am a team player and enjoy working with others to solve complex problems. I am fluent in English and French and have a basic understanding of Spanish. I am also a musician and enjoy playing the guitar, piano, and violin in my free time. I am passionate about music and enjoy playing in my free time. I am also an avid video game player and enjoy playing a variety of games in my free time. I am always looking for new opportunities and am excited to see what the future holds.",
+    "full_name": " Matthieu Evain",
+    "phone_number": "+33769745840",
+    "email": "evainmatthieu44@gmail.com",
+    "description": "En dernière année de Bachelor, je souhaite poursuivre une carrière dans le domaine de l'informatique et de l'industrie aérospatiale. Je suis passionné par la musique, l'informatique et l'espace.",
     "links": {
-        "Portfolio": "https://example.com",
-        "linkedin": "https://example.com",
-        "Github": "https://example.com"
+      "Portfolio": "https://www.matthieu-evain.fr/",
+      "Github": "https://github.com/matthieuEv",
+      "linkedin": "https://www.linkedin.com/in/matthieuev/"
     },
-    "skills":[
-        {
-            "Name": "Languages",
-            "list": [
-                "Python",
-                "Java",
-                "C++",
-                "C"
-            ]
-        },
-        {
-            "Name":"Frameworks",
-            "list": [
-                "Node.js",
-                "Spring",
-                "React",
-                "Angular"
-            ]
-        },
-        {
-            "Name":"DevOps and API Tools",
-            "list": [
-                "Docker",
-                "Kubernetes",
-                "Jenkins",
-                "Postman"
-            ]
-        },
-        {
-            "Name":"Others",
-            "list":[
-                "Agile (Scrum)" 
-            ]
-        }
+    "skills": [
+      {
+        "Name": "Langages",
+        "list": [
+          "Python",
+          "Java",
+          "C",
+          "Js Ts",
+          "MongoDB sdk",
+          "Html",
+          "Css",
+          "Markdown"
+        ]
+      },
+      {
+        "Name": "Frameworks",
+        "list": [
+          "Node.js",
+          "Svelte",
+          "Express.js"
+        ]
+      },
+      {
+        "Name": "Outils DevOps et API",
+        "list": [
+          "Docker, Docker Compose",
+          "GitHub Actions",
+          "GitLab CI/CD",
+          "Postman"
+        ]
+      },
+      {
+        "Name": "Autres",
+        "list": [
+          "Git",
+          "Trello",
+          "Microsoft Teams",
+          "Agile (Scrum)"
+        ]
+      }
     ],
     "languages": {
-        "French": "Native",
-        "English": "Fluent",
-        "Spanish": "Basic"
+      "Français": "Natif",
+      "Anglais": "Courant",
+      "Espagnol": "Basique"
     },
-    "education":[
-        {
-            "Name": "University of Example",
-            "Degree": "Bachelor of Science in Computer Science",
-            "Start": "2015",
-            "End": "2018",
-            "Location": "Paris, France"
-        },
-        {
-            "Name": "Other University of Example",
-            "Degree": "Bachelor of Science in Computer Science",
-            "Start": "2012",
-            "End": "2015",
-            "Location": "Nantes, France"
-        }
+    "education": [
+      {
+        "Name": "ESEO",
+        "Degree": "Bachelor Informatique et Électronique",
+        "Start": "2021",
+        "End": "2024",
+        "Location": "Angers, France"
+      },
+      {
+        "Name": "La Joliverie",
+        "Degree": "Bacalauréat mention Bien (Option Maths et NSI)",
+        "Start": "2018",
+        "End": "2021",
+        "Location": "Saint-Sebastien Sur Loire, France"
+      }
     ],
-    "experience":[
-        {
-            "Title": "Software Engineer",
-            "Company": "Example",
-            "Start": "2018",
-            "End": "Present",
-            "Location": "Paris, France",
-            "Description": [
-                "Developed and maintained software for the company",
-                "Worked on a team of 5 to develop a new software"
-            ]
-        },
-        {
-            "Title": "Not Software Engineer",
-            "Company": "Not Example",
-            "Start": "2009",
-            "End": "2018",
-            "Location": "Nantes, France",
-            "Description": [
-                "Developed and maintained software for the company",
-                "Worked on a team of 5 to develop a new software"
-            ]
-        }
+    "experience": [
+      {
+        "Title": "Bioinformaticien | Stage",
+        "Company": "Université de Nantes",
+        "Start": "Mai 2023",
+        "End": "Juillet 2023",
+        "Location": "Nantes, France",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR38ZjZYTgS24qfgNZSdamBe4C0g-KNXbHryp4wHTjHWQ&s",
+        "Description": [
+          "Création d’un outil de visualisation de données protéiques (Libprotein)",
+          "Formation au CD/CI",
+          "Découverte du monde de la bioinformatique"
+        ]
+      },
+      {
+        "Title": "Stage de technicien en assemblage | Stage",
+        "Company": "Materiel.net",
+        "Start": "Août 2021",
+        "End": "1 semaines",
+        "Location": "Orvault, France",
+        "image":"https://yt3.googleusercontent.com/c2Idfnh9a-Z5TUk2iXbYKDQuLfZwm5pBqZWLG6N7oVG8Bop-gPh7B3FY8mJd6Nwtg3pY4sYZUw=s900-c-k-c0x00ffffff-no-rj",
+        "Description": [
+          "Assemblage/désassemblage de PC",
+          "Maintenance et réparation d'objets connectés",
+          "Installation de nouveaux composants"
+        ]
+      },
+      {
+        "Title": "Spécialiste informatique | Stage",
+        "Company": "Naomis",
+        "Start": "Juin 2019",
+        "End": "2 semaines",
+        "Location": "Nantes, France",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfXyPArjF0YrBLXChzL95EbYzpVhREsW0HiuMMkxG3tQ&s",
+        "Description": [
+          "Découverte de plusieurs métiers informatiques",
+          "Création de mon premier site web pour présenter le stage au Brevet des Collèges"
+        ]
+      }
     ],
-    "projects":[
-        {
-            "Name": "Example Project",
-            "Description": "This is an example project",
-            "Link": "https://example.com"
-        },
-        {
-            "Name": "Example Project",
-            "Description": "Duis et ex deserunt Lorem enim cillum officia. In labore dolor labore occaecat officia nisi. Nostrud irure velit culpa commodo ipsum ea velit aute mollit occaecat ea nulla.",
-            "Link": "https://example.com"
-        }
+    "projects": [
+      {
+        "Name": "Labyrinthe Du Gladiateur",
+        "Description": "Un projet que j'ai pu faire en binôme avec un ami durant notre première année de Bachelor. C'est un jeu en python avec une interface graphique ou le but est de sortir d'un labyrinthe sans se faire prendre.",
+        "Link": "https://github.com/matthieuEv/Labyrinthe-Du-Gladiateur"
+      },
+      {
+        "Name": " Mini-Tram",
+        "Description": "Un projet java en 2ème année de bachelor en groupe de 3 où le but était de reproduire le jeu \"Mini-métro\".",
+        "Link": "https://github.com/matthieuEv/Mini-Tram"
+      },
+      {
+        "Name": "Auto Tag Commit",
+        "Description": "Un projet pour pouvoir gérer les tags github automatiquement via le nom du commit. J'ai fait ce projet pour utiliser aussi le marketplace de Github Action.",
+        "Link": "https://github.com/matthieuEv/Auto-Tag-Commit"
+      },
+      {
+        "Name": " File Remover",
+        "Description": "Un programme qui supprime les fichiers d'un répertoire en fonction de l'extension du fichier que j'ai développé en python pour apprendre les test en python et le CD/CI.",
+        "Link": "https://github.com/matthieuEv/File-Remover"
+      },
+      {
+        "Name": "Stock Up",
+        "Description": "Un projet de 2ème année en groupe de 2 ou le but était de gérer un stockage avec une interface web. En scannant un code barre, on récupérait les informations du produits pour l'afficher sur un site web.",
+        "Link": ""
+      },
+      {
+        "Name": "CaloFitPro",
+        "Description": "L'application permet de mesurer ses calories nécessaires en fonction des informations fournies. Elle à été développée en 3ème année en Java Android.",
+        "Link": "https://github.com/matthieuEv/CaloFitPro"
+      },
+      {
+        "Name": "RamenAdvisor",
+        "Description": "Un projet de dernière année en groupe de 5 ou le but était de développer un site web de notation de restaurants sur Angers. J'ai pu découvrir le framework Svelte, et améliorer mes compétences en Node.js, Express.js et .mongoDB. On a aussi déployés toute l'infrastructure sur un serveur en utilisant docker.",
+        "Link": "https://github.com/orgs/B3-Angers-2324/repositories"
+      }
     ],
-    "extracurricular":[
-        {
-            "Name":"Guitar",
-            "Description":"I have been playing the guitar for 15 years and am passionate about music."
-        },
-        {
-            "Name":"Piano",
-            "Description":"I have been playing the piano for 10 years and enjoy playing in my free time."
-        },
-        {
-            "Name":"Violin",
-            "Description":"I have been playing the violin for 5 years and enjoy playing in my free time."
-        },
-        {
-            "Name":"Video Games",
-            "Description":"I am an avid video game player and enjoy playing a variety of games in my free time."
-        }
+    "extracurricular": [
+      {
+        "Name": "Violon",
+        "Description": "J'ai fait du violon pendant 13 ans. J'ai aussi pu en pratiquer dans des quatuors, mais aussi dans un orchestre ou jai été chef premier violon."
+      },
+      {
+        "Name": "Piano",
+        "Description": "Avant, je ne savais pas si je voulais apprendre le violon ou le piano. Au final, jai choisi de prendre des cours de violon et jai appris le piano en autodidacte. Je joue du piano depuis presque aussi longtemps que le violon."
+      },
+      {
+        "Name": "Guitare",
+        "Description": "J'ai appris à jouer de la Guitare pendant le confinement sur la guitare de mon père pour faire passer le temps. Maintenant je m'amuse à jouer des musiques qui me plaisent."
+      },
+      {
+        "Name": "Vélo",
+        "Description": "Je me suis mis à faire du Vélo pendant le confinement avec un ami qui habite à coté. Depuis on continue à en faire presque chaque Weekend."
+      }
     ],
-    "certification":[
-        {
-            "Name": "Example Certification",
-            "Date": "2018",
-            "Link": "https://example.com"
-        },
-        {
-            "Name": "Another Example Certification",
-            "Date": "2005",
-            "Link": ""
-        }
+    "certification": [
+      {
+        "Name": "TOEIC - 856 points",
+        "Date": "2023",
+        "Link": ""
+      },
+      {
+        "Name": "MOOC Gestion de Projet",
+        "Date": "2022",
+        "Link": "https://certification.gestiondeprojet.pm/GdP20A/GdP20-EVgGRnutJwCL.pdf"
+      },
+      {
+        "Name": "MongoDB",
+        "Date": "2023",
+        "Link": "https://learn.mongodb.com/c/Ll61gdwBQDqs5L6mHZDh0A"
+      }
     ]
-}
+  }

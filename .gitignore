@@ -7,3 +7,9 @@ temp.*
 .vscode
 __pycache__
 .env
+output.tex
+
+images/*
+
+*.pdf
+*.gz
