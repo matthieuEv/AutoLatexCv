@@ -8,6 +8,7 @@ temp.*
 __pycache__
 .env
 output.tex
+node_modules/*
 
 images/*
 

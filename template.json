@@ -2,7 +2,7 @@
     "full_name": " Matthieu Evain",
     "phone_number": "+33769745840",
     "email": "evainmatthieu44@gmail.com",
-    "description": "En dernière année de Bachelor, je souhaite poursuivre une carrière dans le domaine de l'informatique et de l'industrie aérospatiale. Je suis passionné par la musique, l'informatique et l'espace.",
+    "description": "En dernière année de Bachelor, je souhaite poursuivre une carrière dans le domaine de l informatique et de l industrie aérospatiale. Je suis passionné par la musique, l informatique et l espace.",
     "links": {
       "Portfolio": "https://www.matthieu-evain.fr/",
       "Github": "https://github.com/matthieuEv",
@@ -93,7 +93,7 @@
         "image":"https://yt3.googleusercontent.com/c2Idfnh9a-Z5TUk2iXbYKDQuLfZwm5pBqZWLG6N7oVG8Bop-gPh7B3FY8mJd6Nwtg3pY4sYZUw=s900-c-k-c0x00ffffff-no-rj",
         "Description": [
           "Assemblage/désassemblage de PC",
-          "Maintenance et réparation d'objets connectés",
+          "Maintenance et réparation d objets connectés",
           "Installation de nouveaux composants"
         ]
       },
@@ -113,7 +113,7 @@
     "projects": [
       {
         "Name": "Labyrinthe Du Gladiateur",
-        "Description": "Un projet que j'ai pu faire en binôme avec un ami durant notre première année de Bachelor. C'est un jeu en python avec une interface graphique ou le but est de sortir d'un labyrinthe sans se faire prendre.",
+        "Description": "Un projet que j ai pu faire en binôme avec un ami durant notre première année de Bachelor. C est un jeu en python avec une interface graphique ou le but est de sortir d un labyrinthe sans se faire prendre.",
         "Link": "https://github.com/matthieuEv/Labyrinthe-Du-Gladiateur"
       },
       {
@@ -123,34 +123,34 @@
       },
       {
         "Name": "Auto Tag Commit",
-        "Description": "Un projet pour pouvoir gérer les tags github automatiquement via le nom du commit. J'ai fait ce projet pour utiliser aussi le marketplace de Github Action.",
+        "Description": "Un projet pour pouvoir gérer les tags github automatiquement via le nom du commit. J ai fait ce projet pour utiliser aussi le marketplace de Github Action.",
         "Link": "https://github.com/matthieuEv/Auto-Tag-Commit"
       },
       {
         "Name": " File Remover",
-        "Description": "Un programme qui supprime les fichiers d'un répertoire en fonction de l'extension du fichier que j'ai développé en python pour apprendre les test en python et le CD/CI.",
+        "Description": "Un programme qui supprime les fichiers d un répertoire en fonction de l extension du fichier que j ai développé en python pour apprendre les test en python et le CD/CI.",
         "Link": "https://github.com/matthieuEv/File-Remover"
       },
       {
         "Name": "Stock Up",
-        "Description": "Un projet de 2ème année en groupe de 2 ou le but était de gérer un stockage avec une interface web. En scannant un code barre, on récupérait les informations du produits pour l'afficher sur un site web.",
+        "Description": "Un projet de 2ème année en groupe de 2 ou le but était de gérer un stockage avec une interface web. En scannant un code barre, on récupérait les informations du produits pour l afficher sur un site web.",
         "Link": ""
       },
       {
         "Name": "CaloFitPro",
-        "Description": "L'application permet de mesurer ses calories nécessaires en fonction des informations fournies. Elle à été développée en 3ème année en Java Android.",
+        "Description": "L application permet de mesurer ses calories nécessaires en fonction des informations fournies. Elle à été développée en 3ème année en Java Android.",
         "Link": "https://github.com/matthieuEv/CaloFitPro"
       },
       {
         "Name": "RamenAdvisor",
-        "Description": "Un projet de dernière année en groupe de 5 ou le but était de développer un site web de notation de restaurants sur Angers. J'ai pu découvrir le framework Svelte, et améliorer mes compétences en Node.js, Express.js et .mongoDB. On a aussi déployés toute l'infrastructure sur un serveur en utilisant docker.",
+        "Description": "Un projet de dernière année en groupe de 5 ou le but était de développer un site web de notation de restaurants sur Angers. J ai pu découvrir le framework Svelte, et améliorer mes compétences en Node.js, Express.js et .mongoDB. On a aussi déployés toute l infrastructure sur un serveur en utilisant docker.",
         "Link": "https://github.com/orgs/B3-Angers-2324/repositories"
       }
     ],
     "extracurricular": [
       {
         "Name": "Violon",
-        "Description": "J'ai fait du violon pendant 13 ans. J'ai aussi pu en pratiquer dans des quatuors, mais aussi dans un orchestre ou jai été chef premier violon."
+        "Description": "J ai fait du violon pendant 13 ans. J ai aussi pu en pratiquer dans des quatuors, mais aussi dans un orchestre ou jai été chef premier violon."
       },
       {
         "Name": "Piano",
@@ -158,7 +158,7 @@
       },
       {
         "Name": "Guitare",
-        "Description": "J'ai appris à jouer de la Guitare pendant le confinement sur la guitare de mon père pour faire passer le temps. Maintenant je m'amuse à jouer des musiques qui me plaisent."
+        "Description": "J ai appris à jouer de la Guitare pendant le confinement sur la guitare de mon père pour faire passer le temps. Maintenant je m amuse à jouer des musiques qui me plaisent."
       },
       {
         "Name": "Vélo",
